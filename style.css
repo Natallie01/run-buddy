@@ -1,6 +1,7 @@
 /*asterisk matches everything aka universal selector*/* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }/*told every element on the page to not have any margin or border unless we explicitly tell it to.*/
 body {
     /* more on this crazy alphanumerical value in a minute! */
@@ -17,9 +18,9 @@ header {
     font-size: 36px;
     color: #fce138;
     margin:0;
-    display: inline;
+    display: inline;/*Inline literally puts content in line*/
   }
-
+/*header a= main title (RUN BUDDY)*/
 header a{
   text-decoration: none;
   color:#fce138;
@@ -31,10 +32,30 @@ header nav {
 
 }
 header nav ul li {
-  display: inline;
+display: inline ;
 }
 header nav ul li a {
-  margin: 0 30px;
+  margin: 0 35px;
   font-weight: lighter;
   font-size: 22px;
+}
+footer{
+  background: #fce138;
+  width: 100% ;
+  padding: 40px 35px;
+}
+footer h2 {
+  display: inline ;
+  color: #024e76;
+  font-size: 30px;
+  margin:0;
+
+}
+footer div {
+  float: right;
+  line-height: 1.5;/*space between context*/
+  text-align: right;
+}
+footer a {
+  color: #024e76;
 }
