@@ -17,7 +17,7 @@ header {
   display: flex;
   padding: 20px 35px;
   background-color: #39a6b2;
-  justify-content: space-between;
+  justify-content: space-between;/*flex-direction to columb will flip the axis of flex wrap and align*/
   flex-wrap: wrap;
 }
 
@@ -39,13 +39,18 @@ header nav {
 }
 
 header nav ul li {
-  display: inline;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;/*works exactly like justify-content but justfy cntnt works on x axis and aligh-items works on y axis = vertical*/
+    list-style: none;
+  }
+
 
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.55vw; /*view port width*/
 }
 
 footer {
